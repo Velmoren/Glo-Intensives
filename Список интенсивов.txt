@@ -1,5 +1,0 @@
-# Glo-Intensives
-Интенсивы Glo-Академии
-
-1) Интенсив - Need-For-JS
-
