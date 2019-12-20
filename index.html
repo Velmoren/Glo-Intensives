@@ -37,21 +37,20 @@
 
 				<div class="mb-3">
 					<label for="title">Заголовок (краткое описание задачи)</label>
-					<input type="text" class="form-control" id="title" name="title" required value="заголовок">
+					<input type="text" class="form-control" id="title" name="title" required placeholder="Заголовок">
 				</div>
 				<div class="row">
 					<div class="col-md-4 mb-3">
 						<label for="firstName">Ваше имя</label>
-						<input type="text" class="form-control" id="firstName" name="firstName" required value="ваше имя">
+						<input type="text" class="form-control" id="firstName" name="firstName" required placeholder="Ваше имя">
 					</div>
 					<div class="col-md-4 mb-3">
 						<label for="email">Email</label>
-						<input type="email" class="form-control" id="email" name="email" placeholder="you@mail.com" required
-									 value="email@email">
+						<input type="email" class="form-control" id="email" name="email" placeholder="you@mail.com" required>
 					</div>
 					<div class="col-md-4 mb-3">
 						<label for="phone">Номер телефона <span class="text-muted">(optional)</span></label>
-						<input type="text" class="form-control" id="phone" name="phone" value="911">
+						<input type="text" class="form-control" id="phone" name="phone" placeholder="+7 (123) 456 78 90">
 					</div>
 				</div>
 
@@ -60,7 +59,7 @@
 					<label for="description">Описание</label>
 					<textarea type="text" class="form-control" id="description" name="description"
 										placeholder="Поднобно опишите задачу" rows="4"
-										required>Lorem ipsum dolor sit amet, consectetur.</textarea>
+										required></textarea>
 				</div>
 
 				<div class="row">
@@ -68,7 +67,7 @@
 
 						<div class="mb-3">
 							<label for="amount">Количество</label>
-							<input type="number" class="form-control" id="amount" name="amount" required value="10">
+							<input type="number" class="form-control" id="amount" name="amount" required>
 						</div>
 						<div class="d-flex justify-content-center">
 							<label class="currency">
@@ -88,9 +87,7 @@
 					<div class="col-md-6 mb-3">
 						<div class="mb-3">
 							<label for="deadline">Срок выполнения до:</label>
-
-							<input type="date" id="deadline" class="form-control" name="deadline" max="2020-12-31" required
-										 value="2020-01-01">
+							<input type="date" id="deadline" class="form-control" name="deadline" max="2020-12-31" required>
 						</div>
 						<button class="btn btn-primary btn-lg btn-block" type="submit">Отправить заявку</button>
 					</div>
@@ -109,16 +106,56 @@
 		<h1>FreeShavuha</h1>
 		<div class="table-responsive">
 			<table class="table table-bordered table-hover table-sm">
-				<thead class="thead-dark">
+				<thead class="thead-dark" id="headTable">
 				<tr>
 					<th>#</th>
-					<th>Основная задача</th>
-					<th>Валюта</th>
-					<th>Дедлайн</th>
+					<th class="head-sort" id="taskSort">Основная задача</th>
+					<th class="head-sort" id="costSort">Стоимость</th>
+					<th class="head-sort" id="currencySort">Валюта</th>
+					<th class="head-sort" id="deadlineSort">Дедлайн</th>
 				</tr>
 				</thead>
+				<tfoot id="footTable">
+                </tfoot>
 				<tbody id="orders">
-				
+			<!--	<tr class="order">
+					<td>1</td>
+					<td>Lorem</td>
+					<td class="doshirak"></td>
+					<td>2019-12-31</td>
+				</tr>
+				<tr class="order taken">
+					<td>2</td>
+					<td>Lorem</td>
+					<td class="bucks"></td>
+					<td>2020-01-14</td>
+				</tr>
+				<tr class="order">
+					<td>3</td>
+					<td>Lorem</td>
+					<td class="doshirak"></td>
+					<td>2019-12-24</td>
+				</tr>
+				<tr class="order taken">
+					<td>4</td>
+					<td>Lorem</td>
+					<td class="shawarma"></td>
+					<td>2020-02-03</td>
+				</tr>
+				<tr class="order">
+					<td>5</td>
+					<td>Lorem</td>
+					<td class="doshirak"></td>
+					<td>2020-04-02</td>
+				</tr>
+				<tr class="order">
+					<td>6</td>
+					<td>Lorem</td>
+					<td class="shawarma"></td>
+					<td>2020-02-14</td>
+				</tr>-->
+
+
 				</tbody>
 			</table>
 		</div>
@@ -232,7 +269,9 @@
 
 <!--exit-->
 
-<script src="./script/script.js"></script>
+<script src="script/script.js"></script>
+
+
 </body>
 
 
