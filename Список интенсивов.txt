@@ -3,4 +3,5 @@
 
 1) Интенсив - Need-For-JS
 2) Интенсив - FreelanceAndShaurma
+3) Интенсив - calculateJs  (калькулятор вертски)
 
